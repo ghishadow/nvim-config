@@ -2,7 +2,7 @@ vim.cmd [[
 try
   colorscheme catppuccin
 catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
+  colorscheme catppuccin
   set background=dark
 endtry
 ]]
