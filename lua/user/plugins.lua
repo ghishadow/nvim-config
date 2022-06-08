@@ -41,21 +41,22 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use 'sunjon/shade.nvim' 
+  use 'sunjon/shade.nvim'
   use 'folke/lsp-colors.nvim'
   use 'folke/trouble.nvim'
   use "folke/lua-dev.nvim"
   use "folke/todo-comments.nvim"
   use 'simrat39/symbols-outline.nvim'
+  use 'simrat39/rust-tools.nvim'
   use {
-  "folke/twilight.nvim",
-  config = function()
-    require("twilight").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
+    "folke/twilight.nvim",
+    config = function()
+      require("twilight").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
   }
   use 'nacro90/numb.nvim'
   use 'wfxr/minimap.vim'
@@ -76,24 +77,24 @@ return packer.startup(function(use)
   use 'itchyny/lightline.vim'
   use "github/copilot.vim"
   use "moll/vim-bbye"
-  -- use "nvim-lualine/lualine.nvim"
-  use "feline-nvim/feline.nvim"
+  use "nvim-lualine/lualine.nvim"
+  -- use "feline-nvim/feline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
-  use {"ellisonleao/glow.nvim", branch = 'main'}
+  use { "ellisonleao/glow.nvim", branch = 'main' }
   use {
-  'rmagatti/goto-preview',
-  config = function()
-    require('goto-preview').setup {}
-  end
-}
+    'rmagatti/goto-preview',
+    config = function()
+      require('goto-preview').setup {}
+    end
+  }
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "rmagatti/auto-session"
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
   use { "Tastyep/structlog.nvim" }
 
   -- cmp plugins
@@ -104,13 +105,14 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use {
-  'David-Kunz/cmp-npm',
-  requires = {
-    'nvim-lua/plenary.nvim'
+    'David-Kunz/cmp-npm',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
   }
-}
+  use "hrsh7th/cmp-nvim-lsp-document-symbol"
   use 'jvgrootveld/telescope-zoxide'
-  
+
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -123,20 +125,37 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use 'onsails/lspkind-nvim'
   use {
-  "ray-x/lsp_signature.nvim",
-} 
+    "ray-x/lsp_signature.nvim",
+  }
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'nvim-telescope/telescope-dap.nvim'
   -- DAP
   use 'mfussenegger/nvim-dap'
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use 'theHamsta/nvim-dap-virtual-text'
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  -- DAP
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+  use "theHamsta/nvim-dap-virtual-text"
+  use "nvim-telescope/telescope-dap.nvim"
+
+  use "mfussenegger/nvim-dap-python"
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+  }
+  use {
+    'ericpubu/lsp_codelens_extensions.nvim',
+    -- Only required for debugging
+    requires = { { "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap" } },
+    config = function()
+      require("codelens_extensions").setup()
+    end,
   }
   use 'nvim-treesitter/playground'
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
@@ -149,9 +168,9 @@ return packer.startup(function(use)
     tag = 'v0.2.1',
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
-        require('crates').setup()
+      require('crates').setup()
     end,
- }
+  }
   -- Git
   use "lewis6991/gitsigns.nvim"
 
