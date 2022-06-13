@@ -130,16 +130,10 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'nvim-telescope/telescope-dap.nvim'
   -- DAP
   use 'mfussenegger/nvim-dap'
   use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use 'theHamsta/nvim-dap-virtual-text'
-  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  -- DAP
-  use 'mfussenegger/nvim-dap'
-  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
-  use "theHamsta/nvim-dap-virtual-text"
   use "nvim-telescope/telescope-dap.nvim"
 
   use "mfussenegger/nvim-dap-python"
@@ -157,6 +151,7 @@ return packer.startup(function(use)
       require("codelens_extensions").setup()
     end,
   }
+  use 'nvim-treesitter/nvim-treesitter-context'
   use 'nvim-treesitter/playground'
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
   use 'nvim-treesitter/nvim-treesitter-textobjects'
