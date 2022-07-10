@@ -41,6 +41,10 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
+  use {
+  'declancm/cinnamon.nvim',
+  config = function() require('cinnamon').setup() end
+  }
   use 'sunjon/shade.nvim'
   use 'folke/lsp-colors.nvim'
   use 'folke/trouble.nvim'
@@ -74,7 +78,10 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use "catppuccin/nvim"
+  use({
+	"catppuccin/nvim",
+	as = "catppuccin"
+})
   use 'itchyny/lightline.vim'
   use "github/copilot.vim"
   use "moll/vim-bbye"
