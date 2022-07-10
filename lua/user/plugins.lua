@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "folke/todo-comments.nvim"
   use 'simrat39/symbols-outline.nvim'
   use 'simrat39/rust-tools.nvim'
+  use 'andymass/vim-matchup' 
   use {
     "folke/twilight.nvim",
     config = function()
