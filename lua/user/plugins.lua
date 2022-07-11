@@ -112,6 +112,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+  
   use {
     'David-Kunz/cmp-npm',
     requires = {
@@ -130,6 +132,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "RRethy/vim-illuminate"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use 'onsails/lspkind-nvim'
   use {
@@ -143,7 +146,7 @@ return packer.startup(function(use)
   use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use 'theHamsta/nvim-dap-virtual-text'
   use "nvim-telescope/telescope-dap.nvim"
-
+  use "ravenxrz/DAPInstall.nvim"
   use "mfussenegger/nvim-dap-python"
 
   -- Treesitter

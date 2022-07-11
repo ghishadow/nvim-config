@@ -4,9 +4,11 @@ if not status_ok then
 end
 
 local servers = {
+  "sumneko_lua",
   "cssls",
   "html",
   "tsserver",
+  "pyright",
   "bashls",
   "jsonls",
   "yamlls",
@@ -28,6 +30,16 @@ for _, server in pairs(servers) do
     on_attach = require("user.lsp.handlers").on_attach,
     capabilities = require("user.lsp.handlers").capabilities,
   }
+
+  if server == "sumneko_lua" then
+    local sumneko_opts = require "user.lsp.settings.sumneko_lua"
+    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+  end
+
+  if server == "pyright" then
+    local pyright_opts = require "user.lsp.settings.pyright"
+    opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
 
   if server == "rust_analyzer" then
     local keymap = vim.keymap.set
@@ -82,4 +94,3 @@ for _, server in pairs(servers) do
   lspconfig[server].setup(opts)
   ::continue::
 end
-

@@ -3,12 +3,10 @@ local catppuccin = require("catppuccin")
 -- configure it
 catppuccin.setup()
 
-vim.g.catppuccin_flavour = "frappe"
-vim.cmd [[
-try
-  colorscheme catppuccin
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme catppuccin
-  set background=dark
-endtry
-]]
+vim.g.catppuccin_flavour = "latte"
+
+local colorscheme = "catppuccin"
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  return
+end
