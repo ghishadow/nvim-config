@@ -82,11 +82,9 @@ return packer.startup(function(use)
 	"catppuccin/nvim",
 	as = "catppuccin"
 })
-  use 'itchyny/lightline.vim'
   use "github/copilot.vim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
-  -- use "feline-nvim/feline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use { "ellisonleao/glow.nvim", branch = 'main' }

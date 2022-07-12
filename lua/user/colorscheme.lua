@@ -39,7 +39,7 @@ catppuccin.setup({
   },
 })
 
-vim.g.catppuccin_flavour = "latte"
+vim.g.catppuccin_flavour = "mocha"
 
 local colorscheme = "catppuccin"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
