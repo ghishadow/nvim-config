@@ -18,7 +18,7 @@ telescope.setup {
       },
     prompt_prefix = " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    path_display = { "truncate" },
     entry_prefix = "  ",
     initial_mode = "insert",
     selection_strategy = "reset",
@@ -40,7 +40,6 @@ telescope.setup {
       file_sorter = require("telescope.sorters").get_fuzzy_file,
       file_ignore_patterns = { ".git/", ".direnv/", "node_modules" },
       generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
-      path_display = { "truncate" },
       winblend = 0,
       border = {},
       borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
@@ -52,11 +51,8 @@ telescope.setup {
       qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
       -- Developer configurations: Not meant for general override
       buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
-      mappings = {
-         n = { ["q"] = require("telescope.actions").close },
-      },
     
-    mappings = {
+      mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
         ["<C-p>"] = actions.cycle_history_prev,
@@ -121,6 +117,7 @@ telescope.setup {
       },
     },
   },
+  extensions_list = {"themes", "terms"},
   pickers = {
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
