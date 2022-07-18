@@ -80,7 +80,8 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use({
 	"catppuccin/nvim",
-	as = "catppuccin"
+	as = "catppuccin",
+  run = "CatppuccinCompile",
 })
   use "github/copilot.vim"
   use "moll/vim-bbye"
