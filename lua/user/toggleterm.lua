@@ -51,16 +51,16 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
+local diskonaut = Terminal:new({ cmd = "diskonaut", hidden = true })
 
-function _NCDU_TOGGLE()
-	ncdu:toggle()
+function _DISKONAUT_TOGGLE()
+	diskonaut:toggle()
 end
 
-local htop = Terminal:new({ cmd = "htop", hidden = true })
+local btop = Terminal:new({ cmd = "btop", hidden = true })
 
-function _HTOP_TOGGLE()
-	htop:toggle()
+function _BTOP_TOGGLE()
+	btop:toggle()
 end
 
 local python = Terminal:new({ cmd = "python", hidden = true })
