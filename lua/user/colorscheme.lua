@@ -89,7 +89,7 @@ integrations = {
 
 })
 
-vim.g.catppuccin_flavour = "mocha"
+vim.g.catppuccin_flavour = "latte"
 
 local colorscheme = "catppuccin"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

@@ -35,7 +35,7 @@ local options = {
   wrap = false, -- display lines as one long line
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "Ghishadow Mono Nerd Font::h12",
+  guifont = "BerkeleyMonoVariable Nerd Font::h14",
 
 }
 
@@ -44,6 +44,12 @@ local options = {
 vim.opt.fillchars.eob = ""
 
 vim.opt.shortmess:append "c"
+
+
+-- Permenent undo
+vim.opt.undodir = vim.fn.stdpath('config') .. '/undo'
+vim.opt.undofile = true
+
 
 for k, v in pairs(options) do
   vim.opt[k] = v
