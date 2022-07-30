@@ -35,7 +35,7 @@ local options = {
   wrap = false, -- display lines as one long line
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "BerkeleyMonoVariable Nerd Font::h14",
+  guifont = "Ghishadow Nerd Font::h14",
 
 }
 

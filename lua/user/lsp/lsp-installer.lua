@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 local servers = {
-  "lua_language_server",
   "cssls",
   "html",
   "tsserver",
