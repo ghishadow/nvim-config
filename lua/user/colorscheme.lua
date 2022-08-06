@@ -7,7 +7,7 @@ dim_inactive = {
 	shade = "dark",
 	percentage = 0.15,
 },
-transparent_background = true,
+transparent_background = false,
 term_colors = true,
 compile = {
 	enabled = true,
@@ -89,7 +89,8 @@ integrations = {
 
 })
 
-vim.g.catppuccin_flavour = "mocha"
+vim.g.catppuccin_flavour = "frappe"
+
 
 local colorscheme = "catppuccin"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

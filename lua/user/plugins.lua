@@ -181,6 +181,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+
   use {
     'ericpubu/lsp_codelens_extensions.nvim',
     -- Only required for debugging
