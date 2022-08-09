@@ -92,6 +92,7 @@ return packer.startup(function(use)
   }
   use 'nacro90/numb.nvim'
   use 'wfxr/minimap.vim'
+  use 'NvChad/nvim-colorizer.lua'
   use "b0o/schemastore.nvim"
   use "rcarriga/nvim-notify"
   use 'ryanoasis/vim-devicons'
