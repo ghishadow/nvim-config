@@ -47,8 +47,9 @@ return packer.startup(function(use)
   }
   use 'sunjon/shade.nvim'
   use 'folke/lsp-colors.nvim'
+  use 'NvChad/nvim-colorizer.lua'
   use 'folke/trouble.nvim'
-  use "folke/lua-dev.nvim"
+  -- use "folke/lua-dev.nvim"
   use "folke/todo-comments.nvim"
   use 'simrat39/symbols-outline.nvim'
   use 'simrat39/rust-tools.nvim'
@@ -93,6 +94,14 @@ return packer.startup(function(use)
   use 'nacro90/numb.nvim'
   use 'wfxr/minimap.vim'
   use 'NvChad/nvim-colorizer.lua'
+  use({
+  "folke/persistence.nvim",
+  event = "BufReadPre", -- this will only start session saving when an actual file was opened
+  module = "persistence",
+  config = function()
+    require("persistence").setup()
+  end,
+  })
   use "b0o/schemastore.nvim"
   use "rcarriga/nvim-notify"
   use 'ryanoasis/vim-devicons'
@@ -128,7 +137,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "rmagatti/auto-session"
+
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
   use { "Tastyep/structlog.nvim" }
 
