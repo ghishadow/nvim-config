@@ -93,7 +93,6 @@ return packer.startup(function(use)
   }
   use 'nacro90/numb.nvim'
   use 'wfxr/minimap.vim'
-  use 'NvChad/nvim-colorizer.lua'
   use({
   "folke/persistence.nvim",
   event = "BufReadPre", -- this will only start session saving when an actual file was opened
@@ -120,7 +119,6 @@ return packer.startup(function(use)
 	as = "catppuccin",
   run = "CatppuccinCompile",
 })
-  use "github/copilot.vim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
