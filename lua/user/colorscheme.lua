@@ -89,7 +89,7 @@ integrations = {
 
 })
 
-vim.g.catppuccin_flavour = "frappe"
+vim.g.catppuccin_flavour = "latte"
 
 
 local colorscheme = "catppuccin"

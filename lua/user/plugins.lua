@@ -47,6 +47,8 @@ return packer.startup(function(use)
   }
   use 'sunjon/shade.nvim'
   use 'folke/lsp-colors.nvim'
+  use "rebelot/kanagawa.nvim"
+  -- use 'folke/tokyonight.nvim'
   use 'NvChad/nvim-colorizer.lua'
   use 'folke/trouble.nvim'
   -- use "folke/lua-dev.nvim"
@@ -114,11 +116,6 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use({
-	"catppuccin/nvim",
-	as = "catppuccin",
-  run = "CatppuccinCompile",
-})
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
@@ -135,7 +132,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-
+  use "onsails/lspkind.nvim"
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
   use { "Tastyep/structlog.nvim" }
 
