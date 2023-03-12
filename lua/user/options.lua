@@ -35,17 +35,15 @@ local options = {
   wrap = false, -- display lines as one long line
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "SF Mono::h12",
+  guifont = "Victor Mono::h16",
 }
 
 
+-- vim.cmd.colorscheme("kanagawa-dragon")
 
 vim.opt.fillchars.eob = ""
 
 vim.opt.shortmess:append "c"
-vim.cmd[[colorscheme kanagawa]]
-
-
 -- Permenent undo
 vim.opt.undodir = vim.fn.stdpath('config') .. '/undo'
 vim.opt.undofile = true
