@@ -10,7 +10,6 @@ indent_blankline.setup({
 	"help",
 	"startify",
 	"dashboard",
-	"packer",
 	"neogitstatus",
 	"NvimTree",
 	"Trouble",

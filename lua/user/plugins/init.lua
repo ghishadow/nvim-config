@@ -78,7 +78,6 @@ return {
      'kyazdani42/nvim-tree.lua',
      "NoahTheDuke/vim-just",
      'nvim-orgmode/orgmode',
-     "wbthomason/packer.nvim", -- Have packer manage itself
      "nvim-lua/popup.nvim", -- An implementation of the Popup API from vim in Neovim
      "nvim-lua/plenary.nvim", -- Useful lua functions used ny lots of plugins
      "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
@@ -120,6 +119,8 @@ return {
       }
     },
      "hrsh7th/cmp-nvim-lsp-document-symbol",
+     'hrsh7th/cmp-nvim-lsp-signature-help',
+
      'jvgrootveld/telescope-zoxide',
   
   
