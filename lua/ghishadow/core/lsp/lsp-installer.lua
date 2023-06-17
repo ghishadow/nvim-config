@@ -34,17 +34,17 @@ local opts = {}
 
 for _, server in pairs(servers) do
   opts = {
-    on_attach = require("user.lsp.handlers").on_attach,
-    capabilities = require("user.lsp.handlers").capabilities,
+    on_attach = require("ghishadow.core.lsp.handlers").on_attach,
+    capabilities = require("ghishadow.core.lsp.handlers").capabilities,
   }
 
   if server == "lua_language_server" then
-    local sumneko_opts = require "user.lsp.settings.lua_language_server"
+    local sumneko_opts = require "ghishadow.core.lsp.settings.lua_language_server"
     opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
   end
 
   if server == "pyright" then
-    local pyright_opts = require "user.lsp.settings.pyright"
+    local pyright_opts = require "ghishadow.core.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
   end
 
@@ -80,8 +80,8 @@ for _, server in pairs(servers) do
         end,
       },
       server = {
-        on_attach = require("user.lsp.handlers").on_attach,
-        capabilities = require("user.lsp.handlers").capabilities,
+        on_attach = require("ghishadow.core.lsp.handlers").on_attach,
+        capabilities = require("ghishadow.core.lsp.handlers").capabilities,
         settings = {
           ["rust-analyzer"] = {
             lens = {

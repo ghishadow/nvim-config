@@ -6,22 +6,11 @@ return {
     },
      'sunjon/shade.nvim',
      'folke/lsp-colors.nvim',
-     {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = { style = "moon" },
-  config = function(_, opts)
-    local tokyonight = require("tokyonight")
-    tokyonight.setup(opts)
-    tokyonight.load()
-  end,
-},
-          'NvChad/nvim-colorizer.lua',
+      'NvChad/nvim-colorizer.lua',
      'folke/trouble.nvim',
-    --  "folke/lua-dev.nvim"
      "folke/todo-comments.nvim",
      'simrat39/symbols-outline.nvim',
+     "EdenEast/nightfox.nvim",
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
      {
@@ -62,7 +51,7 @@ return {
       end
     },
      'nacro90/numb.nvim',
-     'wfxr/minimap.vim',
+     --- 'wfxr/minimap.vim',
     ({
     "folke/persistence.nvim",
     event = "BufReadPre", -- this will only start session saving when an actual file was opened
@@ -183,3 +172,5 @@ return {
     "lewis6991/gitsigns.nvim",
   
    }
+
+

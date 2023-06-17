@@ -35,11 +35,11 @@ local options = {
   wrap = false, -- display lines as one long line
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "Berkeley Mono::h16",
+  guifont = "Maple Mono NF::h16",
 }
 
 
--- vim.cmd.colorscheme("kanagawa-dragon")
+vim.cmd.colorscheme("nightfox")
 
 vim.opt.fillchars.eob = ""
 
