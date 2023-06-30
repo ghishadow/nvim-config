@@ -39,7 +39,7 @@ local options = {
 }
 
 
-vim.cmd.colorscheme("carbonfox")
+vim.cmd.colorscheme("nightfox")
 
 vim.opt.fillchars.eob = ""
 
