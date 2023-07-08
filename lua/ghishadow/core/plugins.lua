@@ -10,7 +10,7 @@ return {
      'folke/trouble.nvim',
      "folke/todo-comments.nvim",
      'simrat39/symbols-outline.nvim',
-     "EdenEast/nightfox.nvim",
+     'projekt0n/github-nvim-theme',
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
      {
