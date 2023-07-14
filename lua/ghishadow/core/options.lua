@@ -39,7 +39,6 @@ local options = {
 }
 
 
--- vim.cmd.colorscheme("nightfox")
 
 vim.opt.fillchars.eob = ""
 
