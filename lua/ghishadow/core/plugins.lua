@@ -13,6 +13,7 @@ return {
      'projekt0n/github-nvim-theme',
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
      {
     'kdheepak/tabline.nvim',
     config = function()
