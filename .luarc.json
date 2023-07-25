@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+
+    "Lua": {
+        "telemetry": {
+            "enable": false
+        },
+
+        "diagnostics": {
+            "globals": [
+                "vim"
+            ]
+        },
+
+        "runtime": {
+            "version": "LuaJIT"
+        },
+
+        "workspace": {
+            "ignoreDir": [
+                "**/.github/**/*",
+                "./snippets",
+            ]
+        }
+    }
+}
+
