@@ -13,7 +13,6 @@ return {
      'projekt0n/github-nvim-theme',
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
      {
     'kdheepak/tabline.nvim',
     config = function()
@@ -170,7 +169,6 @@ return {
     { "williamboman/mason-lspconfig.nvim" },
     "tamago324/nlsp-settings.nvim", -- language server settings defined in json for
     "RRethy/vim-illuminate",
-    "jose-elias-alvarez/null-ls.nvim", -- for formatters and linters
     'onsails/lspkind-nvim',
     {
       "ray-x/lsp_signature.nvim",
