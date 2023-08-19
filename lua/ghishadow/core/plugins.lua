@@ -10,10 +10,20 @@ return {
      'folke/trouble.nvim',
      "folke/todo-comments.nvim",
      'simrat39/symbols-outline.nvim',
-     'projekt0n/github-nvim-theme',
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
-     {
+    {
+  "navarasu/onedark.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+    config = function()
+    require'onedark'.setup {
+        style = 'darker'
+      }
+    end
+},
+  {
     'kdheepak/tabline.nvim',
     config = function()
       require'tabline'.setup {
@@ -116,7 +126,10 @@ return {
      "nvim-lua/popup.nvim", -- An implementation of the Popup API from vim in Neovim
      "nvim-lua/plenary.nvim", -- Useful lua functions used ny lots of plugins
      "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
-     "numToStr/Comment.nvim", -- Easily comment stuff
+  {"numToStr/Comment.nvim",
+    lazy = false;
+  
+  }, -- Easily comment stuff
      "kyazdani42/nvim-web-devicons",
      "moll/vim-bbye",
      "nvim-lualine/lualine.nvim",
