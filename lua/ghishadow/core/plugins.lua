@@ -13,14 +13,14 @@ return {
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
     {
-  "navarasu/onedark.nvim",
+  "EdenEast/nightfox.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
     config = function()
-    require'onedark'.setup {
-        style = 'darker'
-      }
+    --require'onedark'.setup {
+    --    style = 'darker'
+    --  }
     end
 },
   {
