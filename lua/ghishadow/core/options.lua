@@ -34,7 +34,7 @@ local options = {
   linebreak = true,                        -- companion to wrap, don't split words
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "JetBrainsMono Nerd Font::h14",
+  guifont = "JetBrainsMono Nerd Font::h12",
   whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
 }
 

@@ -13,7 +13,7 @@ return {
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
     {
-  "EdenEast/nightfox.nvim",
+  "oxfist/night-owl.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
