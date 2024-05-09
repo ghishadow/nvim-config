@@ -13,7 +13,7 @@ return {
      'simrat39/rust-tools.nvim',
      'andymass/vim-matchup' ,
     {
-   'stevedylandev/flexoki-nvim', name = 'flexoki',
+   'folke/tokyonight.nvim',
   lazy = false,
   priority = 1000,
   opts = {},
